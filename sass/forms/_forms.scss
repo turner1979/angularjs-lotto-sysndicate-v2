@@ -1,0 +1,44 @@
+
+.add__member {
+
+	.form-row {
+		margin-bottom: 10px;
+		label {
+			display: block;
+			font-size: 0.875em;
+			margin-bottom: 5px;
+		}
+		input[type=text]{
+			width: 100%;
+			padding: 5px 0;
+		}
+
+		input[type=submit]{
+			border: none;
+			background: #F53D00;
+			color: #fff;
+			padding: 15px;
+			font-weight: 700;
+			cursor: pointer;
+			-webkit-appearance: none;
+  			-webkit-border-radius: 0;
+
+			&:hover {
+				background: #111;
+			}
+		}
+
+		p.form__msg {
+			background: #66FF33;
+			padding: 10px;
+			border-radius: 4px;
+			margin-top: 10px;
+		}
+
+		p.form__msg--error {
+			color: #aa0000;
+		}
+
+	}
+
+}

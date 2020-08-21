@@ -1,0 +1,19 @@
+
+	<div class="grid-outer">
+		<div class="grid">
+			<h1>View Members</h1>
+		</div>
+	</div>
+
+	<div class="view__members">
+
+		<div class="view__members--member" ng-repeat="member in members">
+			<p>{{ member.first_name }} {{ member.surname}}</p>
+			<div class="view__members--numbers">
+				<div ng-repeat="number in member.numbers"><span>{{number}}</span></div>
+			</div>
+			<a class="edit" ng-href="#/edit-member/{{$index}}"><i class="icon-pencil"></i></a>
+			<a class="delete"><i class="icon-cross" ng-click="deleteMember($index);"></i></a>
+		</div>
+
+	</div>

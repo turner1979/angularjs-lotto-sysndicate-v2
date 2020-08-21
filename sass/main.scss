@@ -1,0 +1,25 @@
+@import "reset";
+@import "susy/susy";
+
+/* Changing Susy default global settings */
+$susy: (
+  /* Tells Susy to use 12 columns */ 
+  columns: 12,
+  /* Tells Susy that the container has a max-width of 1120px */
+  container: 1200px,
+  gutters: 1/2,
+  gutter-position: split,
+  /* Tells Susy to use border-box */
+  global-box-sizing: border-box 
+ );
+
+@import "layout/layout";
+@import "numbers/numbers";
+@import "view-members/view-members";
+@import "forms/forms";
+@import "icons/icons";
+
+body {
+	background: #efefef;
+	font-family: 'Open Sans', arial;
+}

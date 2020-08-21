@@ -1,0 +1,59 @@
+
+	<div ng-init="init();">
+
+		<div class="grid-outer">
+			<div class="grid-single">
+				<h1>{{ mode }} Member</h1>
+				<h2>1. Choose 6 numbers</h2>
+			</div>
+		</div>
+
+		<div class="numbers">
+			<div class="numbers__inner">
+				<div class="number" ng-repeat="number in board" ng-click="pickNumber($index);" ng-class="{'active': states[$index] == true}">
+					<span>{{ number }}</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="grid-outer">
+			<div class="grid-single">
+				<a class="btn" href="" ng-click="randomNumbers();">Random</a>
+				<a class="btn" href="" ng-click="clearNumbers();">Clear</a>
+			</div>
+		</div>
+
+		<form class="add__member" id="addMember" name="addMember" ng-submit="submitForm()" novalidate>
+			<div class="grid-outer">
+				<div class="grid"><h2>2. Enter member name</h2></div>
+			</div>
+			<div class="grid-outer">
+				<div class="grid">
+
+					<div class="form-row">
+						<label for="first_name">First Name</label>
+						<input type="text" name="first_name" ng-model="first_name" required />
+						<p class="form__msg--error" ng-show="addMember.first_name.$error.required && submitted">Please enter first name</p>		
+					</div>
+
+				</div>
+				<div class="grid">
+
+					<div class="form-row">
+						<label for="surname">Surname</label>
+						<input type="text" name="surname" ng-model="surname" required />
+						<p class="form__msg--error" ng-show="addMember.surname.$error.required && submitted">Please enter surname</p>
+					</div>
+
+				</div>
+			</div>
+			<div class="grid-outer">
+				<div class="grid">
+					<div class="form-row">
+						<input type="submit" value="{{ mode | uppercase }} MEMBER" required ng-click="submitted=true" />
+						<p class="form__msg" ng-show="form_msg">{{ form_msg }}</p>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>

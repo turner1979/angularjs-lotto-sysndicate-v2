@@ -1,0 +1,52 @@
+.view__members {
+
+	.view__members--member {
+		text-align: center;
+		padding: 10px;
+		margin-bottom: 1px;
+		background: #ffffff;
+		color: #F53D00;
+		position: relative;
+
+		p {
+			margin-bottom: 10px;
+		}
+
+		.view__members--numbers { 
+			div {
+				display: inline-block;
+				text-align: center;
+				background: #F53D00;
+				color: #ffffff;
+				width: 50px;
+				height: 50px;
+				border-radius: 50px;
+				font-family: 'Open Sans', arial;
+				font-weight: 700;
+				span {
+					padding-top: 15px;
+					display: block;
+				}
+			}
+		}
+
+		a.edit,
+		a.delete {
+			position: absolute;
+			right: 45px;
+			top: 10px;
+			cursor: pointer;
+			display: inline-block;
+			text-decoration: none;
+			font-size: 1.5em;
+			color: #F53D00;
+		}
+
+		a.delete {
+			right: 10px;
+			top: 10px;
+		}
+
+	}	
+
+}

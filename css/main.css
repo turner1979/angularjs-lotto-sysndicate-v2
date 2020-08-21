@@ -1,0 +1,254 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Changing Susy default global settings */
+h1.title__main {
+  font-family: 'Open Sans', arial;
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  background: #111111;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center; }
+  h1.title__main span {
+    font-weight: 400; }
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto; }
+  .content .inner {
+    margin: 0 15px; }
+  .content .nav-outer {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px; }
+    .content .nav-outer:after {
+      content: " ";
+      display: block;
+      clear: both; }
+    .content .nav-outer .nav-grid {
+      width: 47.22222%;
+      float: left;
+      margin-left: 1.38889%;
+      margin-right: 1.38889%; }
+  .content .grid-outer {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto; }
+    .content .grid-outer:after {
+      content: " ";
+      display: block;
+      clear: both; }
+    .content .grid-outer .grid {
+      width: 47.22222%;
+      float: left;
+      margin-left: 1.38889%;
+      margin-right: 1.38889%; }
+    .content .grid-outer .grid-single {
+      width: 97.22222%;
+      float: left;
+      margin-left: 1.38889%;
+      margin-right: 1.38889%; }
+    @media only screen and (max-width: 500px) {
+      .content .grid-outer .grid {
+        width: 97.22222%;
+        float: left;
+        margin-left: 1.38889%;
+        margin-right: 1.38889%; } }
+  .content h1, .content h2 {
+    font-family: 'Open Sans', arial;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-bottom: 20px; }
+  .content h1 {
+    font-size: 2em; }
+  .content .btn {
+    background: #F53D00;
+    color: #fff;
+    font-size: 0.875em;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: inline-block;
+    font-family: 'Open Sans', arial;
+    text-decoration: none;
+    text-transform: uppercase; }
+    .content .btn:hover {
+      background: #111; }
+  .content a.nav {
+    color: #F53D00;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-family: 'Open Sans', arial;
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: inline-block; }
+    .content a.nav i {
+      margin-right: 10px; }
+    .content a.nav:hover {
+      color: #111; }
+    .content a.nav.active {
+      font-weight: 700; }
+
+.numbers {
+  margin: 0 15px 20px; }
+  .numbers .number {
+    color: #F53D00;
+    background: #ffffff;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 100px;
+    cursor: pointer; }
+    .numbers .number.active {
+      background: #F53D00;
+      color: #ffffff; }
+    .numbers .number span {
+      padding-top: 20px;
+      display: inline-block;
+      font-size: 1.5em;
+      font-weight: 700; }
+  @media only screen and (max-width: 900px) {
+    .numbers .number {
+      width: 50px;
+      height: 50px; }
+      .numbers .number span {
+        padding-top: 15px;
+        font-size: 1em; } }
+
+.view__members .view__members--member {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 1px;
+  background: #ffffff;
+  color: #F53D00;
+  position: relative; }
+  .view__members .view__members--member p {
+    margin-bottom: 10px; }
+  .view__members .view__members--member .view__members--numbers div {
+    display: inline-block;
+    text-align: center;
+    background: #F53D00;
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    font-family: 'Open Sans', arial;
+    font-weight: 700; }
+    .view__members .view__members--member .view__members--numbers div span {
+      padding-top: 15px;
+      display: block; }
+  .view__members .view__members--member a.edit,
+  .view__members .view__members--member a.delete {
+    position: absolute;
+    right: 45px;
+    top: 10px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #F53D00; }
+  .view__members .view__members--member a.delete {
+    right: 10px;
+    top: 10px; }
+
+.add__member .form-row {
+  margin-bottom: 10px; }
+  .add__member .form-row label {
+    display: block;
+    font-size: 0.875em;
+    margin-bottom: 5px; }
+  .add__member .form-row input[type=text] {
+    width: 100%;
+    padding: 5px 0; }
+  .add__member .form-row input[type=submit] {
+    border: none;
+    background: #F53D00;
+    color: #fff;
+    padding: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0; }
+    .add__member .form-row input[type=submit]:hover {
+      background: #111; }
+  .add__member .form-row p.form__msg {
+    background: #66FF33;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px; }
+  .add__member .form-row p.form__msg--error {
+    color: #aa0000; }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?r5y63j");
+  src: url("../fonts/icomoon.eot?r5y63j#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?r5y63j") format("truetype"), url("../fonts/icomoon.woff?r5y63j") format("woff"), url("../fonts/icomoon.svg?r5y63j#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-pencil:before {
+  content: "\e900"; }
+
+.icon-users:before {
+  content: "\e901"; }
+
+.icon-user-plus:before {
+  content: "\e903"; }
+
+.icon-cross:before {
+  content: "\e902"; }
+
+body {
+  background: #efefef;
+  font-family: 'Open Sans', arial; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Lotto Syndicate v2 - Built with Angular JS</title>
+	<meta name="description" content="Lotto Syndicate - Angular JS Example" />
+	<meta name="keywords" content="angular js example" />
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300' rel='stylesheet' type='text/css'> 
+	<link rel="stylesheet" href="css/main.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
+</head>
+<body ng-app="lotto">
+
+	<h1 class="title__main">Lotto Syndicate v2<span> - Built with Angular JS</span></h1>
+
+	<div class="content">
+		<div class="inner">
+
+			<div class="grid-outer">
+				<div class="grid">
+					<a class="nav" href="#"><i class="icon-user-plus"></i>Add Member</a>
+				</div>
+				<div class="grid">
+					<a class="nav" href="#/view-members"><i class="icon-users"></i>View Members</a>
+				</div>
+			</div>
+
+			<div ui-view></div>	
+		</div>
+	</div>
+
+	<script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="app/services/MembersService.js"></script>
+    <script type="text/javascript" src="app/controllers/UpdateMembersCtrl.js"></script>
+    <script type="text/javascript" src="app/controllers/ViewMembersCtrl.js"></script>
+   
+</body>
+</html>
